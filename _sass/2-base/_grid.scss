@@ -1,0 +1,17 @@
+@import 'susy';
+
+$susy: (
+	global-box-sizing: border-box,
+	use-custom: (rem: true ),
+	columns: 5,
+	column-width: 13rem,
+	gutters: 1/3,
+	gutter-position: inside-static,
+	);
+
+@include border-box-sizing;
+
+body {
+	@include container();
+	min-width: 1040px;
+}
