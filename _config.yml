@@ -1,14 +1,29 @@
 # Site settings
-title: Your awesome title
+title: Česko-slovenské vztahy
 email: nezapomenout@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.cesko-slovenske-vztahy.cz" # the base hostname & protocol for your site
+twitter_username: mou
+github_username:  mahish
 
 # Build settings
 markdown: kramdown
+
+permalink: pretty
+
+# Seznam stránek pro menu (http://joshualande.com/jekyll-github-pages-poole/)
+# pages_list:
+#  Aktuální ročník: "/aktualni-rocnik"
+#  Předchozí ročníky: "/predchozi-rocniky"
+#  Kontakt: "/kontakt"
+
+
+sass:
+  style: :compressed
+  line_comments: true
+  preferred_syntax: :scss
+  output_style: :expanded
