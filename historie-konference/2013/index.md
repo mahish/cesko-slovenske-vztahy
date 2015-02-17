@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: page
+title: Předchozí ročníky
+permalink: /predchozi-rocniky/2013/
 ---
 
 <div class="home">
@@ -17,7 +19,5 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>

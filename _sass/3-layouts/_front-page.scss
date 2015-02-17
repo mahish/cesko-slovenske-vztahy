@@ -1,0 +1,10 @@
+.front-page {
+	> article.column {
+		@include span(4);
+		// border: 1px solid black;
+
+		&:last-child {
+			@include span(last 4);
+		}
+	}
+}

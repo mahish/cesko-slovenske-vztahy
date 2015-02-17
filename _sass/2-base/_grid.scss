@@ -2,16 +2,37 @@
 
 $susy: (
 	global-box-sizing: border-box,
-	use-custom: (rem: true ),
-	columns: 5,
-	column-width: 13rem,
-	gutters: 1/3,
-	gutter-position: inside-static,
-	);
+	math: fluid,
+	columns: 12,
+	gutters: 1/4,
+	gutter-position: after,
+	container: 1152px,
+	container-position: center,
+	use-custom: (
+		background-image: true,
+		background-options: false,
+		box-sizing: true,
+		clearfix: false,
+		rem: true,
+		)
+	// debug: (
+	// 	image: show,
+	// 	output: overlay,
+	// 	toggle: top right,
+	// 	)
+);
 
 @include border-box-sizing;
 
-body {
+.wrap {
 	@include container();
-	min-width: 1040px;
+	// @include show-grid(overlay);
+
+	> header, > div, > footer {
+		max-width: 100%;
+	}
+
+	header, footer, div.page-content {
+		@include break;
+	}
 }
