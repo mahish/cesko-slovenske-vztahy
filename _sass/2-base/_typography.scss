@@ -7,14 +7,24 @@ nav {
 }
 
 // HEADINGS
-h1 {
-	color: $text-color;
+h1, h2, h3, h4, h5, h6 {
+	color: $header-color;
 	font-family: $header-font-family;
+	@include inner-text-shadow($lighter);
+}
+
+h1 {
+
 	&.page-heading {
 		font-size: 62%;
 		text-transform: uppercase;
 		letter-spacing: 1.4em;
 	}
+}
+
+// PARAGRAPH
+p {
+	text-indent: #{$base-line-height}em;
 }
 
 // LISTS

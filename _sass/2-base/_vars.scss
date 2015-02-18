@@ -1,22 +1,31 @@
-$base-font-family: "Open Sans", Helvetica, sans-serif;
-// $base-font-size: 100%;
-// $base-line-height: 1.5;
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size: 90%;
+$base-line-height: 1.5;
 
-$header-font-family: Helvetica, Arial, sans-serif;
+$header-font-family: 'Trykker', Georgia, Garamond, serif;;
 
 // -----------
 // COLORS
 // -----------
-$lighter: rgba( #fff, 0.1 );
-$darker: rgba( #000, 0.1 );
+$lighter: rgba( #fff, 0.38 );
+$darker: rgba( #000, 0.38 );
 
 $blue: blue;
 $milk: #f2f2f2;
 $gray: #444444;
+$red: firebrick;
 
+$background-color: $milk;
 $text-color: $gray;
 $link-color: $blue;
-$background-color: $milk;
+$header-color: $red;
+
+@mixin outer-text-shadow($text-shadow-color) {
+	text-shadow: 1px 1px 0 $text-shadow-color;
+}
+@mixin inner-text-shadow($text-shadow-color) {
+	text-shadow: -1px -1px 0 $text-shadow-color;
+}
 
 
 
